@@ -15,4 +15,15 @@ tasks {
 			}
 		}
 	}
+
+	.task-list {
+		form {
+			display: none;
+		}
+		&:hover {
+			form {
+				display: inline-block;
+			}
+		}
+	}
 }

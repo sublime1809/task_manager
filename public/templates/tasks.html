@@ -1,9 +1,16 @@
-<ul>
+<ul class="task-list">
 	<li ng-repeat="task in tasks">
-		<input data-id="{{task.id}}" type="checkbox" ng-click="completeTask(task.id)" ng-checked="task.is_completed" /><div class="task-name">{{task.name}}</div><button ng-click="deleteTask(task.id)">X</button>
+		<span class="task-status">
+			<i class="glyphicon glyphicon-ok clickable" ng-show="task.is_completed" ng-click="uncompleteTask(task.id)"></i>
+			<i class="glyphicon glyphicon-unchecked clickable" ng-hide="task.is_completed" ng-click="completeTask(task.id)"></i>
+		</span>
+		<div class="task-name">{{task.name}}</div>
+		<i class="glyphicon glyphicon-remove clickable" ng-click="deleteTask(task.id)"></i>	
 	</li>	
 	<form name="addTask" ng-submit="createTask(task.name)">
-		<input type="checkbox" ng-model="task.is_completed" />
+		<span class="task-status">
+			<i class="glyphicon glyphicon-unchecked" ng-hide="task.is_completed"></i>
+		</span>
 		<input type="text" ng-model="task.name" name="new-task" />
 		<input type="submit" value="Add" />
 	</form>

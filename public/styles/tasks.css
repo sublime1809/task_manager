@@ -7,5 +7,9 @@ tasks ul {
       display: inline-block; }
     tasks ul li input[type=text] {
       width: 300; }
+tasks .task-list form {
+  display: none; }
+tasks .task-list:hover form {
+  display: inline-block; }
 
 /*# sourceMappingURL=tasks.css.map */

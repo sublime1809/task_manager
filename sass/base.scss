@@ -3,3 +3,7 @@
 body {
 	@extend .primary-color;
 }
+
+.glyphicon.clickable {
+	cursor: pointer;
+}

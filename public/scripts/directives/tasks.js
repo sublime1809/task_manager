@@ -63,7 +63,7 @@
 		}
 
 		$scope.uncompleteTask = function(id) {
-			taskFactory.completeTask(id).then(function(response) {
+			taskFactory.uncompleteTask(id).then(function(response) {
 				for (task_index in $scope.tasks) {
 					if ($scope.tasks[task_index].id == id) {
 						$scope.tasks[task_index] = response.data;
