@@ -7,6 +7,7 @@ The API is documented on [Apiary](http://docs.taskmanager2.apiary.io/#). It is a
 I used the following technologies:
 * [Slim Framework](http://www.slimframework.com/) - I opted to learn a new-to-me framework because I was looking for something simple to create my API.
 * [Doctrine](http://www.doctrine-project.org/) - This was an ORM that I used to model the tasks and it hooks into an SQLite DB.
+* [Composer](https://getcomposer.org/) - Dependency management
 
 ## Interface
 The interface is very simple. I would like to use bootstrap or material design to style it, but wrote basic custom styles for now.
