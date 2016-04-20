@@ -1,0 +1,18 @@
+tasks {
+	ul {
+		list-style-type: none;
+
+		li {
+			text-align: left;
+
+			div.task-name {
+				width: 300px;
+				display: inline-block;
+			}
+
+			input[type=text] {
+				width: 300;
+			}
+		}
+	}
+}
